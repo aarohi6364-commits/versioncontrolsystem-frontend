@@ -78,7 +78,7 @@ const Dashboard = () => {
                         onChange={(e) => setSearchQuery(e.target.value)}
                     />
                 </div>
-                {searchResults.map((repo) => {
+                {searchResults && searchResults.map((repo) => {
                     return (
                         <div key={repo._id}>
                             <h4>{repo.name}</h4>
