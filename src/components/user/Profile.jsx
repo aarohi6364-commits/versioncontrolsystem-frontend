@@ -21,7 +21,7 @@ const Profile = () => {
 
             if(userId){
                 try{
-                    const response = await axios.get(`http://localhost:3000/userProfile/${userId}`);
+                    const response = await axios.get(`https://versioncontrolsystem-backend-12d9.onrender.com/userProfile/${userId}`);
 
                     console.log(response);
                     setUserDetails(response.data);

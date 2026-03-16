@@ -23,7 +23,7 @@ const Signup = () => {
         try{
             setLoading(true);
 
-            const res = await axios.post("http://localhost:3000/signup", {
+            const res = await axios.post("https://versioncontrolsystem-backend-12d9.onrender.com/signup", {
                 username: username,
                 email: email,
                 password: password
